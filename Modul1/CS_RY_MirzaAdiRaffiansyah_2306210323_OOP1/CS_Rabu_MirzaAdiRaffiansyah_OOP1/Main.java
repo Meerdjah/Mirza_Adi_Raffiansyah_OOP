@@ -12,10 +12,15 @@ public class Main
     /**
      * Constructor for objects of class Main
      */
-    public static void Main(String[] args)
+    public static void main(String[] args)
     {
         Guru guruIPA = new Guru("Mr. Budi", 20);
         MataPelajaran IPA = new MataPelajaran("IPA", guruIPA);
+        Siswa Mirza = new Siswa("Mirza", 69, IPA);
+        IPA.addNilai(Penilaian.UTS, 100, Penilaian.UAS, 100);
+        Mirza.totalNilai();
+        IPA.showDetail();
+        Mirza.showDetail();
     }
 
     /**

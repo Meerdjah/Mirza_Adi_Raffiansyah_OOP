@@ -19,10 +19,9 @@ public class Siswa implements Showing
     /**
      * Constructor for objects of class Siswa
      */
-    public Siswa(String nama, String status, int id, MataPelajaran mataPelajaran)
+    public Siswa(String nama, int id, MataPelajaran mataPelajaran)
     {
         this.nama = nama;
-        this.status = status;
         this.id = id;
         this.mataPelajaran = mataPelajaran;
     }
