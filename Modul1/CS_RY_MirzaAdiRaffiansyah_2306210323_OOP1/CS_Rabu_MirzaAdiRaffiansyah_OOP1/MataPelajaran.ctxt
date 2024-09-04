@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MataPelajaran
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MataPelajaran\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=namaMataPelajaran\ guru
+comment1.target=MataPelajaran(java.lang.String,\ Guru)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MataPelajaran\r\n
+comment2.params=UTS\ nilaiUTS\ UAS\ nilaiUAS
+comment2.target=void\ addNilai(Penilaian,\ float,\ Penilaian,\ float)
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment3.params=
+comment3.target=void\ showDetail()
+numComments=4
