@@ -10,5 +10,17 @@ public class Main
         Intern Bernadya = new Intern("Bernadya", 3291, Position.Intern, Division.CreativeMedia, 3, 6);
         
         Manager Hasan = new Manager("Hasan", 1001);
+        
+        Hasan.assignTask(Harvan, "Find a Speaker for Grand Event");
+        Hasan.assignTask(Rafi, "Marketing to Company A");
+        
+        Hasan.addEmployee(Harvan);
+        Hasan.addEmployee(Rafi);
+        
+        Harvan.displayInfo();
+        Rafi.displayInfo();
+        Karina.displayInfo();
+        Bernadya.displayInfo();
+        Hasan.displayInfo();
     }
 }

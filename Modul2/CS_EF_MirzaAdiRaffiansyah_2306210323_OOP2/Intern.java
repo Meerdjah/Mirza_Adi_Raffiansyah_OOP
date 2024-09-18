@@ -21,7 +21,21 @@ public class Intern extends Employee
     @Override
     public double totalSalary()
     {
-        double salary hourlyRate * hoursWorked;
+        double salary = hourlyRate * hoursWorked;
+        int monthlyWorked = hoursWorked * 20;
+        
+        if (monthlyWorked < 20)
+        {
+            return 0;
+        }
+        else if (monthlyWorked > 20 && monthlyWorked < 88)
+        {
+            return salary;
+        }
+        else
+        {
+            return salary * 110/100;
+        }
     }
     
     public void displayInfo()

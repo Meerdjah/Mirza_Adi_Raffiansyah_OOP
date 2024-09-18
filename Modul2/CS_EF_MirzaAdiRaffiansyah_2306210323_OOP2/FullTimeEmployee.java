@@ -26,16 +26,29 @@ public class FullTimeEmployee extends Employee
 
     public void displayInfo()
     {
-        
+        System.out.println("Nama: " + getName());
+        System.out.println("Id: " + getId());
+        System.out.println("Divisi: " + division);
+        System.out.println("Base Salary: " + baseSalary);
+        System.out.println("Base Bonus: " + baseBonus);
+        System.out.println("Total Salary: " + totalSalary());        
     }
     
     public double bonusSalary()
     {
-        return 0;
+        if (performanceRating < 0.2)
+        {
+            return 0;
+        }
+        else
+        {
+            return baseSalary * performanceRating;
+        }
     }
     
+    @Override
     public double totalSalary()
     {
-        return 0;
+        return baseSalary + bonusSalary();
     }
 }

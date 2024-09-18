@@ -21,7 +21,7 @@ implements CalculateSalary
      */
     public void receiveTask(String task)
     {
-            
+        System.out.println(getName() + " bertugas " + task);
     }
     
     public double totalSalary()

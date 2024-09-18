@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Intern
+comment1.params=name\ id\ position\ division\ hourlyRate\ hoursWorked
+comment1.target=Intern(java.lang.String,\ int,\ Position,\ Division,\ double,\ int)
+comment2.params=
+comment2.target=double\ totalSalary()
+comment3.params=
+comment3.target=void\ displayInfo()
+numComments=4

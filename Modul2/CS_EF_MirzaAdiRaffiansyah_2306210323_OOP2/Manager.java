@@ -28,16 +28,18 @@ public class Manager extends Person
     
     public void assignTask(Employee employee, String task)
     {
-        
+        employee.receiveTask(task);
     }
     
     public void displayInfo()
     {
         System.out.println("Nama: " + getName());
         System.out.println("Id: " + getId());
-        for (Employee employees : employees)
+        System.out.println("Employees Managed:");
+         
+        for (Employee employee : employees)
         {
-            System.out.println("Employees Managed: " + employees);
+            System.out.println("- " + employee.getName());
         }
     }
 }
