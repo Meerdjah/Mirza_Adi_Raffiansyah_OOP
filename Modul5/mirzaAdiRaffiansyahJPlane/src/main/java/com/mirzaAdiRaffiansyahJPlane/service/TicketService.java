@@ -45,5 +45,9 @@ public class TicketService {
                 RuntimeException("Account not found"));;
 
         Ticket ticket = new Ticket(account, plane, code);
+        account.setBalance(account.getBalance() - 10000);
+        accountRepository.save(account);
+        ticketRepository.save(ticket);
+        return ticket;
     }
 }

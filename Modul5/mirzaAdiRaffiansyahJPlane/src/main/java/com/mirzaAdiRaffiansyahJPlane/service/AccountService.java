@@ -24,7 +24,8 @@ public class AccountService {
 
     public Account topUpBalance(long accountId, String username, String password, int amount) {
         Account account = accountRepository.findById(accountId).orElseThrow(() -> new RuntimeException("Account not found"));
+        account.equals(accountRepository.findById(accountId));
         account.setBalance(account.getBalance() + amount);
-        return account;
+        return accountRepository.save(account);
     }
 }

@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TicketRepository extends JpaRepository<Ticket, Long> {
-    Ticket findByFirstCode(String code);
+    Ticket findFirstByCode (String code);
 }
