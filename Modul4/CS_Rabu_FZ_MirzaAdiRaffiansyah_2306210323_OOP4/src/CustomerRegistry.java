@@ -17,6 +17,9 @@ public class CustomerRegistry extends LibraryCollection<Customer>{
     }
 
     public Customer findByCustomerID(String customerId) {
-        return getAllItems().entrySet().stream().findFirst(customerId);
+        return getAllItems().entrySet().stream()
+                .filter(entry -> entry.getValue().customerId.toLowerCase().contains(customerId.toLowerCase()))
+                .findFirst()
+                .orElse(null);
     }
 }
